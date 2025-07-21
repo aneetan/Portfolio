@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/Hero';
 import About from "./components/About";
 import Languages from "./components/Languages";
+import Projects from "./components/Projects";
 
 function App() {
   const toggleDark = () => {
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Languages/>
         <About/>
+        <Projects/>
     </div>
     {/* <BrowserRouter>
     <Routes>

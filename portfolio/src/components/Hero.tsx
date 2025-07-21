@@ -23,7 +23,8 @@ const Hero = () => {
                 Software Developer
             </h1>
             
-            <button className="bg-[var(--primary-dark)] hover:bg-[var(--primary)] text-white text-xl font-medium py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:scale-95">
+            <button className="bg-[var(--primary-dark)] hover:bg-[var(--primary)] text-white text-xl font-medium py-3 px-8 rounded-full transition-all duration-300
+            shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:scale-95">
                 Contact Me
             </button>
             </div>
