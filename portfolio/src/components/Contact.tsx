@@ -1,21 +1,20 @@
-import { RiGithubFill, RiLinkedinBoxFill, RiLinkedinFill, RiMailFill, RiPhoneFill, RiTwitterFill } from '@remixicon/react'
-import React from 'react'
+import { RiGithubFill,  RiLinkedinFill, RiMailFill } from '@remixicon/react'
 
 const Contact = () => {
   return (
      <section 
-        id='about' 
-        className="min-h-screen bg-gray-800 flex items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-8 sm:py-20 overflow-hidden"
+        id='contact' 
+        className="min-h-screen bg-gray-800 dark:bg-gray-300 flex items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-8 sm:py-20 overflow-hidden"
         >
         <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-        <div className="lg:w-1/2 order-2 lg:order-1 animate-fadeInLeft">
-            <h2 className="text-gray-200 text-3xl sm:text-4xl md:text-5xl font-bold">
+        <div className="lg:w-1/2 order-1 lg:order-1 animate-fadeInLeft">
+            <h2 className="text-gray-200  dark:text-gray-800  text-3xl sm:text-4xl md:text-5xl font-bold">
                 Let's get in <span className="text-[var(--primary)]"> Touch</span>
                 </h2>
         </div>
 
-        <div className="lg:w-1/2 order-1 lg:order-2 animate-fadeInRight flex flex-col sm:gap-6">
+        <div className="lg:w-1/2 order-2 lg:order-2 animate-fadeInRight flex flex-col sm:gap-6">
             <ol className="relative text-gray-800 border-s-4 border-[var(--primary)] space-y-6">                  
             <li className="ms-6">            
                 <div className="flex justify-start gap-4 items-center hover:text-[var(--primary)] p-2 rounded transition">

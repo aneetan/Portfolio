@@ -6,15 +6,18 @@ import Languages from "./components/Languages";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
+import { useTheme } from "./store/useTheme";
 
 function App() {
-  const toggleDark = () => {
-        document.documentElement.classList.toggle('dark');
-      };
+  const {theme} = useTheme();
+   useEffect(() => {
+          document.documentElement.classList.toggle("dark", theme === "dark");
+      }, [theme]);
 
   return (
     <>
-    <div className="h-auto w-full overflow-hidden">
+    <div className="h-auto w-full overflow-hidden scroll-smooth">
       <Navbar />
         <Hero />
         <Languages/>
@@ -22,16 +25,7 @@ function App() {
         <Projects/>
         <Contact/>
         <Footer/>
-    </div>
-    {/* <BrowserRouter>
-    <Routes>
-      
-    </Routes>
-    </BrowserRouter> */}
-      
-      
-
-      
+    </div>   
     </>
   )
 }

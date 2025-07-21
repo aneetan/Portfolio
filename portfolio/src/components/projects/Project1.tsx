@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Project1 = () => {
   return (
-     <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mb-24">
+     <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mb-48">
         <div className="lg:w-1/2 order-2 lg:order-1 animate-fadeInLeft text-left">
                 <h2 className="text-3xl font-bold text-gray-200 mb-4">ProofChain</h2>
                 
