@@ -1,5 +1,8 @@
-import { BrowserRouter, Routes } from 'react-router'
-import './App.css'
+import "./App.css"
+import Navbar from './components/navbar/Navbar';
+import Hero from './components/Hero';
+import About from "./components/About";
+import Languages from "./components/Languages";
 
 function App() {
   const toggleDark = () => {
@@ -8,19 +11,19 @@ function App() {
 
   return (
     <>
+    <div className="h-auto w-full overflow-hidden">
+      <Navbar />
+        <Hero />
+        <Languages/>
+        <About/>
+    </div>
     {/* <BrowserRouter>
     <Routes>
       
     </Routes>
     </BrowserRouter> */}
       
-      <button onClick={() => document.documentElement.classList.toggle('dark')}>
-        Toggle Dark Mode
-      </button>
-
-      <div className="bg-white text-black dark:bg-gray-900 dark:text-white p-4">
-        This box switches color in dark mode.
-      </div>
+      
 
       
     </>
