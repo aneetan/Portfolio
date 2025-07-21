@@ -1,6 +1,5 @@
 import { RiCloseLine, RiMenu2Line } from '@remixicon/react';
 import React, { useEffect, useState } from 'react';
-import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

@@ -1,47 +1,70 @@
+import { RiCodeBoxFill, RiComputerFill, RiDatabase2Fill } from "@remixicon/react"
 
 const About = () => {
   return (
-    <section id='about' className="min-h-screen bg-gray-800 flex items-center px-4 sm:px-8 md:px-12 lg:px-28 py-20 overflow-hidden">
-    <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-        {/* Text Content */}
-        <div className="md:w-1/2 order-2 md:order-1 transition-all duration-700 ease-in-out transform opacity-0 translate-y-10 animate-fadeInUp">
-            <div className="flex flex-col items-center md:items-start">
-            <div className="flex gap-2 items-baseline mb-6">
-                <span className="font-bold text-4xl text-gray-100 transition-all duration-300">Hello</span>
-                <div className="w-2 h-2 bg-[var(--primary-dark)] rounded-full animate-pulse"></div>
+        <section 
+        id='about' 
+        className="min-h-screen bg-gray-800 flex items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-12 sm:py-20 overflow-hidden"
+        >
+        <div className="container mx-auto">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            <div className="lg:w-1/2 order-2 lg:order-1 animate-fadeInLeft">
+                <ol className="relative text-gray-800 border-s-4 border-[var(--primary)] space-y-8">                  
+                <li className="ms-6">            
+                    <span className="absolute flex items-center justify-center w-4 h-4 rounded-full -start-2 bg-[var(--primary)]"></span>
+                    <div className="flex justify-start gap-4 mb-2 items-center">
+                    <RiComputerFill className="text-gray-100 text-xl"/>
+                    <h3 className="font-bold text-lg sm:text-xl leading-tight text-gray-100">Frontend Development</h3>
+                    </div>
+                    <p className="text-sm sm:text-base text-gray-400">React, TypeScript, Tailwind CSS</p>
+                </li>
+                
+                <li className="ms-6">
+                    <span className="absolute flex items-center justify-center w-4 h-4 rounded-full -start-2 bg-[var(--primary)]"></span>
+                    <div className="flex justify-start gap-4 mb-2 items-center">
+                    <RiCodeBoxFill className="text-gray-100 text-xl"/>
+                    <h3 className="font-bold text-lg sm:text-xl leading-tight text-gray-100">Backend Development</h3>
+                    </div>
+                    <p className="text-sm sm:text-base text-gray-400">Node.js, Express, Spring (Java), Django (Python)</p>
+                </li>
+
+                <li className="ms-6">
+                    <span className="absolute flex items-center justify-center w-4 h-4 rounded-full -start-2 bg-[var(--primary)]"></span>
+                    <div className="flex justify-start gap-4 mb-2 items-center">
+                    <RiDatabase2Fill className="text-gray-100 text-xl"/>
+                    <h3 className="font-bold text-lg sm:text-xl leading-tight text-gray-100">Database & DevOps</h3>
+                    </div>
+                    <p className="text-sm sm:text-base text-gray-400">MongoDB, PostgreSQL, Docker, Git</p>
+                </li>
+                </ol>
             </div>
 
-            <div className="relative mb-8">
-                <hr className="w-40 border-t-6 border-[var(--primary-dark)] absolute -left-36 top-1/2 transform -translate-y-1/2 transition-all
-                duration-1000 delay-200 animate-pulse" />
-                <span className="font-normal text-gray-100 text-4xl pl-8 transition-all duration-300">I'm Anita</span>
-            </div>
+            {/* Image Content - Animated from right */}
+            <div className="lg:w-1/2 order-1 lg:order-2 animate-fadeInRight flex flex-col gap-4 sm:gap-6">
+                <h2 className="text-gray-200 text-3xl sm:text-4xl md:text-5xl font-bold">
+                About <span className="text-[var(--primary)]">Me</span>
+                </h2>
 
-            <h1 className="text-5xl font-extrabold text-gray-100 mb-8 transition-all duration-500 hover:scale-105 hover:text-[var(--primary-dark)]">
-                Software Developer
-            </h1>
-            
-            <button className="bg-[var(--primary-dark)] hover:bg-[var(--primary)] text-white text-xl font-medium py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:scale-95">
-                Contact Me
-            </button>
-            </div>
-        </div>
+                <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed">
+                Motivated and detail-oriented full-stack developer with strong expertise in JavaScript and Python ecosystems. 
+                Experienced in building scalable web applications and creating innovative solutions through participation 
+                in multiple hackathons. Passionate about clean code and efficient architecture.
+                </p>
 
-        {/* Image Content */}
-        <div className="md:w-1/2 order-1 md:order-2 flex justify-center md:justify-end transition-all duration-1000 delay-150">
-            <div className="relative w-full max-w-md mt-12 group">
-            <div className="absolute inset-0 bg-[var(--primary-dark)] opacity-20 rounded-full blur-xl transition-all duration-1000 group-hover:opacity-30 group-hover:scale-110"></div>
-            <img 
-                className="w-full h-full object-cover rounded-lg transition-all duration-700 ease-in-out transform opacity-0 -translate-x-10 animate-fadeInRight hover:scale-105 hover:shadow-2xl"
-                src={Image} 
-                alt="Anita's profile"
-            />
+                <div className="mt-4 flex flex-wrap gap-2">
+                {["React", "Node.js", "TypeScript", "Java", "Python", "Django", "Spring", "MongoDB"].map((tech, index) => (
+                    <span 
+                    key={index}
+                    className="text-xs sm:text-sm px-3 py-1 bg-gray-700 text-gray-200 rounded-full"
+                    >
+                    {tech}
+                    </span>
+                ))}
+                </div>
+            </div>
             </div>
         </div>
-        </div>
-    </div>
-    </section>
+        </section>
   )
 }
 
