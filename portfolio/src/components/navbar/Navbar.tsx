@@ -71,7 +71,7 @@ const Navbar = () => {
                     <li key={item}>
                     <a
                      onClick={() => scrollToSection(`${item.toLowerCase()}`)}
-                     className='text-base cursor-pointer transition-all text-gray-100 dark:text-gray-700 duration-300 p-1 md:p-0 hover:text-gray-300 block md:inline-block'
+                     className='text-base cursor-pointer transition-all text-gray-100 dark:text-gray-700 duration-300 p-1 md:p-0 hover:text-gray-300 dark:hover:text-[var(--primary)] block md:inline-block'
                     >
                         {item}
                     </a>

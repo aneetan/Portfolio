@@ -6,10 +6,10 @@ const Project1 = () => {
                 <h2 className="text-3xl font-bold text-gray-200 mb-4">ProofChain</h2>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">Django</span>
-                    <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">HTML/CSS</span>
-                    <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">Web3.js</span>
-                    <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">Solidity</span>
+                    <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">Django</span>
+                    <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">HTML/CSS</span>
+                    <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">Web3.js</span>
+                    <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">Solidity</span>
                 </div>
                 
                 <p className="text-gray-600 mb-8">

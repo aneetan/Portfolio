@@ -15,10 +15,10 @@ const Project2 = () => {
         <h2 className="text-3xl font-bold text-gray-200 mb-4">Learnovate</h2>
                 
             <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">React.js</span>
-                <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">Spring(Java)</span>
-                <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">MySQL</span>
-                <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm font-medium rounded-full">Tailwind CSS</span>
+                <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">React.js</span>
+                <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">Spring(Java)</span>
+                <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">MySQL</span>
+                <span className="px-3 py-1 bg-gray-700 dark:bg-gray-500 text-gray-300 text-sm font-medium rounded-full">Tailwind CSS</span>
             </div>
             
             <p className="text-gray-600 mb-8">
