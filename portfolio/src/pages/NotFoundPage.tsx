@@ -9,9 +9,9 @@ const NotFoundPage = () => {
             <div className="flex">
                 <div className="w-[100vw] py-12 px-4">
                     <div className="mx-auto max-w-[400px] text-center">
-                     
                     <img 
                     className='px-22 w-100'
+                    loading="lazy"
                     src="https://img.freepik.com/premium-vector/flat-modern-character-trying-connecting-cables-web-online-page-with-404-found-error_372769-2127.jpg?semt=ais_hybrid&w=740"/>
                     <h4 className="mb-6 font-extrabold text-5xl text-[var(--primary)]"> OOPS! </h4>
                     <p className="mb-8 text-lg text-black">

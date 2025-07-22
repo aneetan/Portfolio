@@ -1,3 +1,4 @@
+import OptimizedImage from "../OptimizedImage"
 
 const Project1 = () => {
   return (
@@ -31,8 +32,11 @@ const Project1 = () => {
         <div className="lg:w-1/2 order-1 lg:order-2 animate-fadeInRight flex flex-col gap-4 sm:gap-6">
             <div className="relative max-w-lg mx-auto">
                 <div className="absolute inset-0 border-2 border-gray-300 rounded-lg  transform translate-x-4 -top-4 mb-6 z-0"></div>
-                
-                <img src="https://github.com/aneetan/Evidence-Management-System/raw/master/pictures/Screenshot%202025-01-14%20221158.png" alt="Battleship game" className="relative z-10 border-2 border-gray-800 rounded-lg w-full h-auto"/>
+                <OptimizedImage
+                    src="https://github.com/aneetan/Evidence-Management-System/raw/master/pictures/Screenshot%202025-01-14%20221158.png"
+                    alt="ProofChain"
+                    className="relative z-10 border-2 border-gray-800 rounded-lg w-full h-auto"
+                />
             </div>
         </div>
     </div>

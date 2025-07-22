@@ -1,4 +1,5 @@
 import Learnovate from '../../assets/images/learnovate.png'
+import OptimizedImage from '../OptimizedImage'
 
 const Project2 = () => {
   return (
@@ -6,8 +7,11 @@ const Project2 = () => {
         <div className="lg:w-1/2 order-2 lg:order-1 animate-fadeInLeft flex flex-col gap-4 sm:gap-6">
             <div className="relative max-w-lg mx-auto">
                 <div className="absolute inset-0 border-2 border-gray-300 rounded-lg  transform translate-x-4 -top-4 mb-6 z-0"></div>
-                
-                <img src={Learnovate} alt="Battleship game" className="relative z-10 border-2 border-gray-800 rounded-lg w-full h-auto"/>
+                <OptimizedImage
+                    src={Learnovate}
+                    alt="Learnovate"
+                    className="relative z-10 border-2 border-gray-800 rounded-lg w-full h-auto"
+                />
             </div>
         </div>
 

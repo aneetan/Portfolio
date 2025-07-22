@@ -1,5 +1,6 @@
 import Image from '../assets/images/profile.png';
 import { useScroll } from '../store/useScroll';
+import OptimizedImage from './OptimizedImage';
 
 const Hero = () => {
     const {scrollToSection} = useScroll();
@@ -35,12 +36,18 @@ const Hero = () => {
                 <div className="w-full lg:w-1/2 order-2 lg:order-2 flex justify-center lg:justify-end transition-all duration-1000 delay-150 z-10 mt-12">
                     <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md group">
                         <div className="absolute inset-0 bg-[var(--primary-dark)] opacity-20 rounded-full blur-xl transition-all duration-1000 group-hover:opacity-30 group-hover:scale-110"></div>
+                        <OptimizedImage
+                            src={Image}
+                            alt="Anita's profile"
+                            className="w-full h-auto object-cover rounded-lg transition-all duration-700 ease-in-out transform opacity-0 -translate-x-10 animate-fadeInRight hover:scale-105 hover:shadow-xl"
+                        />
+{/* 
                         <img 
                             className="w-full h-auto object-cover rounded-lg transition-all duration-700 ease-in-out transform opacity-0 -translate-x-10 animate-fadeInRight hover:scale-105 hover:shadow-xl"
                             src={Image} 
                             alt="Anita's profile"
                             loading="eager"
-                        />
+                        /> */}
                     </div>
                 </div>
             </div>
