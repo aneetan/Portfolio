@@ -19,7 +19,7 @@ const Contact = () => {
             <li className="ms-6">            
                 <div className="flex justify-start gap-4 items-center hover:text-[var(--primary)] p-2 rounded transition">
                     <RiLinkedinFill className='bg-gray-100 h-6 w-6 p-1 rounded'/>
-                    <a href="https://linkedin.com/in/anita-neupane" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-gray-600 hover:text-[var(--primary)] transition">
+                    <a href="https://www.linkedin.com/in/anita-neupane-2b018022a/" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-gray-600 hover:text-[var(--primary)] transition">
                         Anita Neupane
                     </a>
                 </div>
@@ -28,7 +28,7 @@ const Contact = () => {
             <li className="ms-6">
                 <div className="flex justify-start gap-4 items-center hover:text-[var(--primary)] p-2 rounded transition">
                     <RiMailFill className='bg-gray-100 h-6 w-6 p-1 rounded'/>
-                    <a href="mailto:anita@example.com" className="text-sm sm:text-base text-gray-600 hover:text-[var(--primary)] transition">
+                    <a href="mailto:anee.neu15@gmail.com" className="text-sm sm:text-base text-gray-600 hover:text-[var(--primary)] transition">
                         anee.neu15@gmail.com
                     </a>
                 </div>
@@ -37,7 +37,7 @@ const Contact = () => {
             <li className="ms-6">
                 <div className="flex justify-start gap-4 items-center hover:text-[var(--primary)] p-2 rounded transition">
                     <RiGithubFill className='bg-gray-100 h-6 w-6 p-1 rounded'/>
-                    <a href="https://github.com/anitaneupane" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-gray-600 hover:text-[var(--primary)] transition">
+                    <a href="https://github.com/aneetan" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-gray-600 hover:text-[var(--primary)] transition">
                         @aneetan
                     </a>
                 </div>

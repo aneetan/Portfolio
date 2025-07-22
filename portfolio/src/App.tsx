@@ -1,31 +1,26 @@
 import "./App.css"
-import Navbar from './components/navbar/Navbar';
-import Hero from './components/Hero';
-import About from "./components/About";
-import Languages from "./components/Languages";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import { useEffect } from "react";
-import { useTheme } from "./store/useTheme";
+import { BrowserRouter, Route, Routes } from "react-router";
+import { lazy, Suspense } from "react";
 
 function App() {
-  const {theme} = useTheme();
-   useEffect(() => {
-          document.documentElement.classList.toggle("dark", theme === "dark");
-      }, [theme]);
+  const Home = lazy(() => import('./pages/Home'))
+  const NotFound = lazy(() => import('./pages/NotFoundPage'))
+  const LoadingFallback = () => (
+    <div className="flex justify-center items-center h-screen">
+      <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+    </div>
+  );
 
   return (
     <>
-    <div className="h-auto w-full overflow-hidden scroll-smooth">
-      <Navbar />
-        <Hero />
-        <Languages/>
-        <About/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
-    </div>   
+    <BrowserRouter>
+      <Suspense fallback={<LoadingFallback/>}>
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="*" element={<NotFound/>} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter> 
     </>
   )
 }

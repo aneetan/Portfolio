@@ -1,6 +1,9 @@
 import Image from '../assets/images/profile.png';
+import { useScroll } from '../store/useScroll';
 
 const Hero = () => {
+    const {scrollToSection} = useScroll();
+
   return (
         <section id='home' className="min-h-screen bg-gray-800 dark:bg-gray-300 flex items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-16 md:py-20 overflow-hidden">
         <div className="container mx-auto">
@@ -21,7 +24,9 @@ const Hero = () => {
                             Software Developer
                         </h1>
                         
-                        <button className="bg-[var(--primary-dark)] hover:bg-[var(--primary)] text-white text-lg sm:text-xl font-medium py-2 px-6 sm:py-3 sm:px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
+                        <button
+                        onClick={() => scrollToSection(`contact`)}
+                        className="bg-[var(--primary-dark)] hover:bg-[var(--primary)] text-white text-lg sm:text-xl font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
                             Contact Me
                         </button>
                     </div>

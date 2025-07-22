@@ -1,19 +1,13 @@
 import { RiCloseLine, RiMenu2Line, RiMoonFill, RiSunFill } from '@remixicon/react';
 import React, { useEffect, useState } from 'react';
 import { useTheme } from '../../store/useTheme';
+import { useScroll } from '../../store/useScroll';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean>(false);
     const { theme, toggleTheme } = useTheme();
-
-    const scrollToSection = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
+    const {scrollToSection} = useScroll();
 
     useEffect(()=> {
         const handleScroll = () => {
@@ -71,7 +65,8 @@ const Navbar = () => {
                     <li key={item}>
                     <a
                      onClick={() => scrollToSection(`${item.toLowerCase()}`)}
-                     className='text-base cursor-pointer transition-all text-gray-100 dark:text-gray-700 duration-300 p-1 md:p-0 hover:text-gray-300 dark:hover:text-[var(--primary)] block md:inline-block'
+                     className='text-base cursor-pointer transition-all text-gray-100 dark:text-gray-700 duration-300
+                     p-1 md:p-0 hover:text-gray-300 dark:hover:text-[var(--primary)] block md:inline-block'
                     >
                         {item}
                     </a>
