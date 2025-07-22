@@ -1,5 +1,5 @@
 import { RiCloseLine, RiMenu2Line, RiMoonFill, RiSunFill } from '@remixicon/react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTheme } from '../../store/useTheme';
 import { useScroll } from '../../store/useScroll';
 

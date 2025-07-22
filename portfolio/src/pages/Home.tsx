@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Hero from '../components/Hero'
 import Languages from '../components/Languages'
@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(() => {
             document.documentElement.classList.toggle("dark", theme === "dark");
         }, [theme]);
-        
+
   return (
     <div className="h-auto w-full overflow-hidden scroll-smooth">
       <Navbar />
